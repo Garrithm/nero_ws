@@ -1,0 +1,28 @@
+{
+  "server": {
+    "host": "0.0.0.0",
+    "port": 8080
+  },
+  "robot": {
+    "can_port": "nero_can",
+    "firmware_version": "default",
+    "speed_percent": 10,
+    "feedback_timeout": 10.0,
+    "enable_timeout": 10.0,
+    "reach_timeout": 20.0,
+    "tolerance_deg": 1.0,
+    "command_repeats": 3,
+    "command_repeat_interval": 0.08,
+    "command_refresh_interval": 1.0,
+    "jog_step_deg": 1.5
+  },
+  "positions_deg": {
+    "初始位置": [0.0, -90.0, 0.0, 123.0, 0.0, 0.0, 0.0],
+    "拍摄高位": [0.0, 0.0, 0.0, 0.0, 0.0, 0.0, 89.0],
+    "拍摄低位": [0.0, 89.0, 0.0, 82.0, 0.0, 0.0, -18.0],
+    "断电位置": [0.0, -100.0, 0.0, 123.0, 0.0, 0.0, -23.0],
+    "抓取锥桶": [0.0, 80.0, 0.0, 90.0, 0.0, 0.0, -80.0],
+    "提取锥桶": [0.0, 60.0, 0.0, 90.0, 0.0, 0.0, -60.0],
+    "放下锥桶": [0.0, 80.0, 0.0, 90.0, 0.0, 0.0, -80.0]
+  }
+}

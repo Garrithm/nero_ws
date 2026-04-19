@@ -1,0 +1,17 @@
+[Unit]
+Description=Nero Web Control
+After=network-online.target nero-can.service
+Wants=network-online.target nero-can.service
+
+[Service]
+Type=simple
+User=lz
+Group=lz
+WorkingDirectory=/home/lz/nero_ws/pyAgxArm/web_control
+Environment=PYTHONUNBUFFERED=1
+ExecStart=/bin/bash /home/lz/nero_ws/pyAgxArm/web_control/start_web.sh
+Restart=always
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target

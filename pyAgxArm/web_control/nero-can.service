@@ -1,0 +1,15 @@
+[Unit]
+Description=Nero CAN Auto Activation
+After=systemd-modules-load.service network-pre.target
+Wants=network-pre.target
+
+[Service]
+Type=oneshot
+EnvironmentFile=/home/lz/nero_ws/pyAgxArm/web_control/nero-can.env
+WorkingDirectory=/home/lz/nero_ws/pyAgxArm
+TimeoutStartSec=0
+ExecStart=/bin/bash /home/lz/nero_ws/pyAgxArm/web_control/ensure_can_ready.sh
+RemainAfterExit=yes
+
+[Install]
+WantedBy=multi-user.target

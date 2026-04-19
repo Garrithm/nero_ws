@@ -1,0 +1,15 @@
+build/
+install/
+log/
+**/build/
+**/install/
+**/log/
+**/.git/
+**/__pycache__/
+**/.pytest_cache/
+**/*.pyc
+**/*.pyo
+**/*.egg-info/
+.codex
+.mypy_cache/
+.ruff_cache/
